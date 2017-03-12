@@ -1,0 +1,5 @@
+# Assumes React app has been prebuilt with 'npm run build'
+# Copies built app from build into ngnix html folder
+# @kevinhooke
+FROM nginx
+COPY build /usr/share/nginx/html
