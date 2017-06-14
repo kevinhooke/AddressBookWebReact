@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router';
 import Home from '../Components/HomeComponent';
 import AddNew from '../Components/AddNewComponent';
-import Search from '../Components/SearchComponent';
+import SearchContainer from '../Containers/SearchContainer';
 import NavMenu from '../Components/NavigationComponent';
 
 class App extends Component {
@@ -13,7 +13,7 @@ class App extends Component {
                     <Route path="/" component={NavMenu}>
                         <IndexRoute component={Home} />
                         <Route path="new" component={AddNew} />
-                        <Route path="search" component={Search} />
+                        <Route path="search" component={SearchContainer} />
                     </Route>
                 </Router>
         );
